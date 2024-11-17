@@ -126,7 +126,7 @@ function verifyVertically(arrDna){
   var letter2 = "";
   var cantRepeatVerAux = 0;
   var cantRepeatVertically = 0;
-  for(var j = 0; j < arrDna[j].length - 1; j++){//por cada posicion de la columna recorro esa posicion en cada cadena de caracteres
+  for(var j = 0; j <= arrDna[0].length - 1; j++){//por cada posicion de la columna recorro esa posicion en cada cadena de caracteres
     for (var i = 0; i < arrDna.length - 1; i++){
       posCol = j;
       posRow1 = i;
