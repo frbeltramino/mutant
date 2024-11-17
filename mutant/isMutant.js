@@ -1,5 +1,6 @@
 export function isMutant() {
   var dna = document.getElementById("isMutantInput").value;
+  var isMutant;
   if (dna == ""){
     alert("no ingresaste ninguna cadena de adn");
     return
@@ -8,7 +9,8 @@ export function isMutant() {
   var cantRepeatVertically = verifyVertically(arrDna);
   var cantRepeatDiagonally = verifyDiagonally(arrDna);
   var cantRepeatHorizontally = verifyHorizontally(arrDna);
-  alert(cantRepeatVertically + cantRepeatHorizontally + cantRepeatDiagonally > 1)
+  isMutant = cantRepeatVertically + cantRepeatHorizontally + cantRepeatDiagonally > 1;
+  alert(isMutant);
   return isMutant;
   
 }
